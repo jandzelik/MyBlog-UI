@@ -1,0 +1,13 @@
+<div class="container">
+    <div class="row p-1 border bg-grey" *ngFor = 'let bl of blogList'>
+        <div class="col">
+            <a [routerLink]= "['/blogs', bl.id]">
+                {{bl.title}}
+            </a>
+        </div>
+        <div class="col">{{bl.description}}</div>
+    </div>
+</div>
+
+
+
